@@ -1,0 +1,26 @@
+{
+  "name": "trove-api-archiver",
+  "version": "1.0.0",
+  "description": "download metadata from the national library of australia NLA trove api",
+  "main": "index.js",
+  "bin": {
+    "trove-api-archiver": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "max ogden",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxogden/trove-api-archiver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/trove-api-archiver/issues"
+  },
+  "homepage": "https://github.com/maxogden/trove-api-archiver#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
