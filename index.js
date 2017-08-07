@@ -34,7 +34,9 @@ function get (item, cb) {
         if (retries > 0) {
           retries--
           console.error('retry', retries, url, resp.statusCode, data)
-          setTimeout(15000, req(url))
+          setTimeout(15000, function () {
+            req(url)
+          })
           return
         }
         throw err
