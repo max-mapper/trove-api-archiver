@@ -1,6 +1,6 @@
 {
   "name": "trove-api-archiver",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "download metadata from the national library of australia NLA trove api",
   "main": "index.js",
   "bin": {
