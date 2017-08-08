@@ -26,7 +26,7 @@ get(urls[0], function () {
 function get (item, cb) {
   var out = fs.createWriteStream('./' + item.zone + '-zone.json')
   req(item.url)
-  var retries = 3
+  var retries = 5
   function req (url) {
     var start = Date.now()
     request(url, {json: true}, function (err, resp, data) {
@@ -41,6 +41,7 @@ function get (item, cb) {
         }
         throw err
       }
+      retries = 5
       var records = data.response.zone[0].records
       var next = records.next
       if (!next || !records.work.length) {
