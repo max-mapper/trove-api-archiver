@@ -10,7 +10,7 @@ var root = 'http://api.trove.nla.gov.au'
 if (oneZone) zones = [oneZone]
 
 var urls = zones.map(function (z) {
-  return {zone: z, url: `${root}/result?q=lastupdated:[*%20TO%20*]&zone=${z}&encoding=json${key}&s=${since}&n=100&sortby=dateasc`}
+  return {zone: z, url: `${root}/result?q=%20&zone=${z}&encoding=json${key}&s=${since}&n=100&sortby=dateasc`}
 })
 
 function getNext() {
